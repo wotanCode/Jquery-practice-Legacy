@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML5/CCS3/JQUERY</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+  <!--JQUERY MOBILE CDN-->
+  <!--EN EL META: el contet="width=devce-width le dice basicamente que el ancho
+sera igual al ancho del dispositivo, es obligatorio ponerlo-->
+  <!-- OPCIONALMENTE SE PUEDE PONER: user-scalable=no  esto evita que la persona pueda
+hacer zoom en el dispositivo.-->
+  <!--El initial-scale=1 es para mostrar una escala correcta en los viewport
+ya ke jquery mobile usa responsive design-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+  <!--NOTA DE IMPORTANCIA
+Si hubiera querido que jquery mobile funcionara localmente, sin usar el CDN
+El codigo seria el siguiente... Contando por supuesto que el jquery mobile
+que todas sus carpetas estuvieran en una misma localidad... no hay que dividir nada.
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile-1.4.2.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="jquery.mobile-1.4.2/jquery.mobile-1.4.2.js"></script>
+-->
+
+</head>
+
+<body>
+
+  <!--CABECERA-->
+  <header id="fondo-cabecera">
+    <section id="cabecera">
+      <h1 id="isotipo">Archivos HTML5/CSS3/JQUERY 1.0<br />Pedro Yanez</h1>
+
+      <nav id="botonera">
+        <ul>
+          <li class="botones"><a href="index.html">PRINCIPAL</a></li>
+          <li class="botones"><a href="css.html">CSS3</a></li>
+          <li class="botones"><a href="jquery.html">JQUERY</a></li>
+          <li class="botones"><a href="jqueryui.html">JQUERY UI</a></li>
+          <li class="botones"><a href="jquerymobile.html">JQUERY MOBILE</a></li>
+          <li class="botones"><a href="javaScript-animaciones.html">ANIMACIONES JAVASCRIPT</a></li>
+        </ul>
+      </nav>
+
+    </section>
+  </header>
+
+  <!-- SECCION DEL BANNER-->
+  <section id="banner">
+    <h1>BANNER</h1>
+  </section>
+
+  <!--SECCION DEL CUERPO DE LA PAGINA-->
+  <section id="cuerpo">
+    <h2>Bienvenido Pedro Yanez</h2>
+    <h3>Indice de Contenidos</h3>
+    <ol>
+      <li>¿Que es esto?</li>
+      <li>Version 1.0</li>
+      <li>Notas importantes</li>
+      <li>Los CSS</li>
+      <li>Notas</li>
+    </ol>
+
+
+    <article class="articulos">
+      <h3>¿Que es esto?</h3>
+
+      <div data-role="page">
+        <div data-role="content">
+          <h1>Prueba de titulo</h1>
+        </div>
+      </div>
+
+    </article>
+
+
+    <!-- AVERIGUAR QUE ES ESTO.
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>Insert Page Title Here</h1>
+  </div>
+ 
+  <div data-role="main" class="ui-content">
+    <p>Insert Content Here</p>
+  </div>
+ 
+  <div data-role="footer">
+    <h1>Insert Footer Text Here</h1>
+  </div>
+</div>
+-->
+
+  </section>
+
+  <!--Footer-->
+  <footer id="footer">
+    <h1 id="contenido-f1">PEDRO YANEZ</h1>
+  </footer>
+
+</body>
+
+</html>

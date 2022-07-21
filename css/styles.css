@@ -1,0 +1,160 @@
+@charset "utf-8";
+/*Con este comando import se llama a otra CSS para meterla y cargarla primero antes de esta propia CSS*/
+@import url("reset.css");
+
+/************************************/
+/** Aqui estan las css de etiquetas**/
+/************************************/
+
+body {
+	background-color: #CCCCCC;
+	font-family: sans-serif, "times new roman", times, serif;
+	/*TAMAÑO DE TIPOGRAFIA*/
+	/*1 Em en una pc es de total de 16px... 1.5em entonces serian 24...
+	pero si dividimos esto entre 2 da 12... Es decir 12px hacia arriba y
+	hacia abajo de amrgen... La recomendacion es siempre multiplicar por
+	1.5 el tamaño de letra y ese es el interlineado*/
+	font-size: 1em;
+	line-height: 1.5em;
+	/*1.5x16px=24px*/
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 38px;
+	margin: 10px 0px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+header a {
+	color: #FFF;
+}
+
+ol {
+	list-style-type: decimal;
+	list-style-position: inside;
+}
+
+article {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+table,
+tr,
+td {
+	border: #000 solid;
+}
+
+
+
+/************************************/
+/*CSS DE CLASES*/
+/************************************/
+
+.botones {
+	font-size: 0.7em;
+	float: left;
+
+	padding: 15px 15px 15px 15px;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	/*border-left-width: 1px;
+	border-left-color: #000000;*/
+	border-style: solid;
+}
+
+.articulos {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.sub-ol {
+	padding-left: 40px;
+	list-style-position: outside;
+}
+
+.sub-olul {
+	padding-left: 40px;
+	list-style-position: outside;
+}
+
+/************************************/
+/*CSS DE ID*/
+/************************************/
+#fondo-cabecera {
+	width: 100%;
+	height: 70px;
+	background-color: #333;
+}
+
+#cabecera {
+	width: 100%;
+	max-width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #FFF;
+}
+
+#isotipo {
+	margin-top: 14px;
+	float: left;
+	text-align: center;
+}
+
+#botonera {
+	float: right;
+	witdh: 100%;
+	height: 100%;
+	margin-top: 10px;
+
+}
+
+#banner {
+	height: 350px;
+	max-width: 1080px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #06C;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	margin-bottom: 20px;
+}
+
+#cuerpo {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1020px;
+	width: 100%;
+	background-color: #FFF;
+	border-radius: 30px;
+	padding: 30px;
+}
+
+#footer {
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	background-color: #333;
+	color: #FFF;
+}
+
+#contenido-f1 {
+	padding-top: 40px;
+}
+
+/************************************/
+/************************************/
+/************************************/

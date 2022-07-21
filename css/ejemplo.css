@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+#ejemplo1 {
+	cursor: pointer;
+	-webkit-opacity: .6;
+	-webkit-transition: 0.5s all ease-in-out;
+}
+
+#ejemplo1:hover {
+	-webkit-opacity: 1;
+	-webkit-transform: scale(1.2, 1.2) rotate(15deg);
+	-webkit-box-shadow: #333 5px 5px 5px;
+	z-index: 5;
+}
+
+/*#ej2{
+	position: static;
+}
+
+#ejemplo2{
+	cursor: pointer;
+	background-color: rgba(255,255,255, .7);
+	width: 180px;
+	height: 150px;
+	position: absolute;
+	bottom: -100px;
+	-webkit-transition: 0.5s all ease-in-out;
+}
+#ejemplo2:hover{
+	bottom: 0px;
+}*/

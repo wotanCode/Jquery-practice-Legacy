@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.transformaciones {
+	background-image: url(../img/yo1.png);
+	width: 180px;
+	height: 150px;
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#rotaciones {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#traslaciones {
+	-webkit-transform: translate(-200px, 5px);
+	-moz-transform: translate(-200px, 5px);
+	-o-transform: translate(-200px, 5px);
+	-ms-transform: translate(-200px, 5px);
+	transform: translate(-200px, 5px);
+}
+
+#escalar {
+	-webkit-transform: scale(1.2, 1.2);
+	/*Aqui lo hago para cada eje*/
+	-moz-transform: scale(1.2);
+	/*Aqui para ambos a la vez*/
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+#sesgar {
+	-webkit-transform: skew(45deg, 0deg);
+	/*Aqui lo hago para cada eje*/
+	-moz-transform: skew(45deg, 0deg);
+	/*Aqui para ambos a la vez*/
+	-o-transform: skew(45deg, 0deg);
+	-ms-transform: skew(45deg, 0deg);
+	transform: skew(45deg, 0deg);
+}

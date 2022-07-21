@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5/CCS3/JQUERY</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/transform.css" rel="stylesheet" type="text/css">
+    <link href="css/transition.css" rel="stylesheet" type="text/css">
+    <link href="css/ejemplo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!--CABECERA-->
+    <header id="fondo-cabecera">
+        <section id="cabecera">
+            <h1 id="isotipo">Archivos HTML5/CSS3/JQUERY 1.0<br />Pedro Yanez</h1>
+
+            <nav id="botonera">
+                <ul>
+                    <li class="botones"><a href="index.html">PRINCIPAL</a></li>
+                    <li class="botones"><a href="css.html">CSS3</a></li>
+                    <li class="botones"><a href="jquery.html">JQUERY</a></li>
+                    <li class="botones"><a href="jqueryui.html">JQUERY UI</a></li>
+                    <!--<li class="botones"><a href="jquerymobile.html">JQUERY MOBILE</a></li>-->
+                    <li class="botones"><a href="javaScript-animaciones.html">ANIMACIONES JAVASCRIPT</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <!-- SECCION DEL BANNER-->
+    <section id="banner">
+        <h1>BANNER</h1>
+    </section>
+
+    <!--SECCION DEL CUERPO DE LA PAGINA-->
+    <section id="cuerpo">
+        <h2>Bienvenido Pedro Yanez</h2>
+        <h3>Indice de Contenidos CSS</h3>
+        <ol>
+            <li>Transformaciones
+                <ol class="sub-olul">
+                    <li>Rotate - Rotar</li>
+                    <li>Traslate - Trasladar</li>
+                    <li>Scale - Escalar</li>
+                    <li>Skew - Sesgado</li>
+                </ol>
+            </li>
+            <li>Transiciones</li>
+            <li>Animaciones</li>
+            <li>*</li>
+            <li>*</li>
+        </ol>
+
+        <h3>Transformaciones</h3>
+        <article class="articulos">
+            <p>Aqui se agregan diferentes tipos de transformaciones CSS con una imagen mia. Esto se puede hacer tanto
+                con imagenes, como con background de imagenes css. NOTA: Todas las imagenes son fondos background en css
+            </p>
+            <p>La sintaxis basica para hacer transformaciones es: transform:function(valor) donde function es el tipo de
+                transformacion que aplique. Ademas se debe usar el codigo propietario que son: -webkit- Chrome y Safari
+                -moz- Mozilla -o- Opera -ms- Microsoft ver codigo fuente. </p>
+            <p>Imagen original insertada en HTML</p>
+            <img src="img/yo.png" width="500" height="375" alt="yo" />
+        </article>
+
+        <article class="articulos">
+            <h4>Transform Rotate</h4>
+            <p>Las transformaciones en rotacion tienen diferentes tipos de medidas. Las medidas son
+            <ol class="sub-olul">
+                <li>deg (grados)</li>
+                <li>grad (gradianes)</li>
+                <li>rad (radianes)</li>
+                <li>turn (giros)</li>
+            </ol>
+            </p><br />
+            <div class="transformaciones" id="rotaciones"></div>
+        </article>
+
+
+        <article class="articulos">
+            <h4>Transform translate</h4>
+            <p>Las transformaciones de traslado se usan con una sintaxis diferente: transform: translate(x,y) o bien
+                cuando queremos que solo admita un valor seria asi: transform: translateX(valor)... el tipo de mededida
+                puede ser en px, % es decir las medidas usuales.
+            </p><br />
+            <div class="transformaciones" id="traslaciones"></div>
+        </article>
+
+        <article class="articulos">
+            <h4>Transform scale</h4>
+            <p>Sirve para hacer el objeto mas grande... Lo escala, la sintaxis es: transform:scale(x,y)
+            </p><br />
+            <div class="transformaciones" id="escalar"></div>
+        </article>
+
+        <article class="articulos">
+            <h4>Transform skew</h4>
+            <p>Sesga la imagen al estilo photoshop, utiliza los mismos tipos de medida que que el rotate, es decir deg
+                grad rad y turn... La sintaxis es: transform:skew(x,y)
+            </p><br />
+            <div class="transformaciones" id="sesgar"></div>
+        </article>
+
+        <article class="articulos">
+            <h4>Origen de transformacion</h4>
+            <p>Por defecto el origen de las transformaciones es el centro y de alli hace los giros y todo lo demas pero
+                este centro se puede cambiar con la siguiente sintaxis: transform-origin: valor valor. Ej
+                transform-origin: right bottom; Ej2 transform-origin: center 50px;</p>
+        </article>
+
+        <article class="articulos">
+            <h4>Transformaciones multiples</h4>
+            <p>Para ello se usa esta sintaxis. "transform: funcion(valor) funcion(valor) funcion(valor);"</p>
+        </article>
+
+        <article class="articulos">
+            <h4>Transformaciones interactivas</h4>
+            <p>Para que las transformaciones sean interactivas y se activen cuando se ponga el puntero sobre ellas o
+                bien cuando sea touch y pase el dedo encima se usan los seudoselectores :hover y :focus... Esto quiere
+                decir que no se coloca en los parametros del css si no mas bien en el nombre del identificador o clase,
+                es decir un ejemplo seria #traslaciones:hover{}</p>
+        </article>
+
+        <h3>Transiciones</h3>
+        <article class="articulos">
+            <h4>Base de Transiciones</h4>
+            <p>Son los diferentes metodos usados para hacer una transicion a una transformacion en tiempos mas
+                agradables y no de golpe con el :hover... Ver comentarios del codigo Css. Se hace si bien con el hover
+                se usa ademas los comandos css -webkit-transition-property: all; el cual le dice de una vez que todos
+                los comandos css3 se aplicaran cuando el puntero este arriba.. ej: -webkit-transition-property:
+                -webkit-transition-; y -webkit-transition-duration: 3s; en el cual definimos tiempo en segundos.</p>
+            <p>Ejemplo: Transicion a una rotacion
+            <div class="transformaciones" id="rotaciones2"></div>
+            </p>
+        </article>
+
+        <article class="articulos">
+            <h4>Efecto Ease</h4>
+            <p>Se usa para manipular la velocidad de la Transicion. Su sintax es {transition-timing-function: valor;}
+                Los valores posibles para transition timing son: ease (default, lento-acelera-desacelera) linear
+                (constant) ease-in (lento-acelera) ease-out (rapido-desacelera) ease-in-out (lento-acelera y linear
+                desacelera) step(valor) (etapas)</p>
+            <p>En realidad hay muchas mas. ... Por ultimo tenemos un valor especial que se llama cubir-bezier que es
+                personalizado, se recomienda usar las paginas acontinuacion para editar eso, ademas de los otros valores
+                posibles de transiciones de css3 que se muestran alli: http://matthewlein.com/ceaser/
+                http://easings.net/es y cubic-bezier.com</p>
+            <p>Ejemplo: Transicion a una rotacion con cubic-bezier
+            <div class="transformaciones" id="rotaciones3"></div>
+            </p>
+        </article>
+
+        <article class="articulos">
+            <h4>Efecto delay</h4>
+            <p>El delay hace que tarde el efecto una cierta cantidad de segundos en ejecutarse, la sintax seria
+                transition-delay, por supuesto con el propietario -webkit- o el que se use. Lo coloque en el anteior
+                "efecto ease" pero esta como comentario. Quitar el comentario en el codigo para ver que es real</p>
+        </article>
+
+        <h4>Notacion acortada o shorthand notation</h4>
+        <p>Como hacer css de esta manera crea una cantidad increible de css3 lo mejor es usar un shorthand notation, la
+            sintax para ella es: transition: duracion propiedad aceleracion delay. Por ejemplo esto<br />
+            {<br />
+            #identificador<br />
+            -webkit-transition-property: -webkit-transform;<br />
+            -webkit-transition-duration: 3s;<br />
+            -webkit-transition-timing-function: cubic-bezier(.57,-1.15,.05,1.83);<br />
+            -webkit-transition-delay: 500ms;<br />
+            }<br />
+
+            Se convertiria en:<br />
+
+            {#identificador: -webkit-transition: 2s -webkit-transform cubic-bezier(.57,-1.15,.05,1.83) 500ms;}
+        </p>
+        </article>
+
+
+        <h3>Ejemplo</h3>
+        <article class="articulos">
+            <h4>Ejemplo 1</h4>
+            <p>Colocar puntero sobre la imagen... Ver codigo fuente...</p>
+            <p>Ejemplo: Transicion a una rotacion</p>
+            <div class="transformaciones" id="ejemplo1"></div>
+        </article>
+
+
+        <h4>Ejemplo 21</h4>
+        <p>Colocar puntero sobre la imagen... Ver codigo fuente... Y reparar...</p>
+        <p>Ejemplo: datos de una imagen</p>
+
+        <div class="transformaciones" id="ej2">
+
+            <div id="ejemplo2">
+                <p>Pedro Yanez</p>
+                <p>Programador</p>
+                <p>HTML5-CSS3-JQUERY</p>
+            </div>
+
+        </div>
+        </article>
+
+
+        <h3>Animaciones</h3>
+        <article class="articulos">
+            <h4>bases de animaciones</h4>
+            <p>Para hacer una animacion en css se hace con la sintax de ejemplo donde mover es el nombre de la
+                animacion, puede ser cualquier nombre:<br />
+                @-webkit-keyframes mover {<br />
+                from {transform:traslateX(-100px)}<br />
+                to{transform:traslateX(600px)}<br />
+                }<br />
+                Luego se hace un llamado a el de esta manera:<br />
+                #botonAnimacion{<br />
+                -webkit-animation-name: mover;<br />
+                -webkit-animation-duration: 3s;<br />
+                }<br />
+                Algunos otros comandos de utilidad son:<br />
+                -webkit-animation-timing-function: ease; tipo de animacion... <br />
+                -webkit-animation-delay: 2s ;unciona igual que el otro delay<br />
+                -webkit-animation-iteration-count: 1; por defecto es uno, repite una animacion una cantidad de veces, si
+                quiero que sea para siempre, infinite si quiero media animacion .5<br />
+                -webkit-direction: normal ; se usa para especifiar la direccion de la animacion incluyendo en reversa,
+                su timing tambien esta en reversa, los valores son normal, que es pr defecto, reverse que es alrevez,
+                tambien esta alternate, esto permite en ciclos normal y reversa, aternate-reverse, es lo mismo pero
+                empieza en reversa<br />
+                <br />
+                El shorthand Notation es asi:<br />
+                animation: nombre duracion timing delay iteration direction. Ej<br />
+                -webkit-animation: mover 3s ease 1s 4 alternate-reverse;<br />
+                Ademas se puede hacer animaciones multiples con la sintax asi:<br />
+                @-webkit-keyframes mover {<br />
+                from {transform:traslateX(-100px) transform:rotate(0deg)}<br />
+                to{transform:traslateX(600px) transform:rotate(180deg}<br />
+                <br />
+                Tambien se pueden hacer animaciones por porcentajes asi<br />
+                @-webkit-keyframes mover {<br />
+                0% {transform:traslateX(-100px)}<br />
+                20% ....
+                100%{transform:traslateX(600px)}<br />
+                }<br />
+                Para finalizar una animacion se puede pausar sea cual sea con los comandos<br />
+                -webkit-animation-play-state: running/paused; Con uno de esos dos valores :)<br />
+            </p>
+
+        </article>
+    </section>
+
+    <!--Footer-->
+    <footer id="footer">
+        <h1 id="contenido-f1">PEDRO YANEZ</h1>
+    </footer>
+
+</body>
+
+</html>

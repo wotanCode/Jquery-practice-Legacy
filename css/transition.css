@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+#rotaciones2 {
+	/*Se pone las transiciones que va a afectar asi como a la duracion en el general
+y en el hover es donde se coloca la animacion*/
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 3s;
+}
+
+#rotaciones2:hover {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+#traslaciones2:hover {
+	-webkit-transform: translate(-200px, 5px);
+	-moz-transform: translate(-200px, 5px);
+	-o-transform: translate(-200px, 5px);
+	-ms-transform: translate(-200px, 5px);
+	transform: translate(-200px, 5px);
+}
+
+#escalar2:hover {
+	-webkit-transform: scale(1.2, 1.2);
+	/*Aqui lo hago para cada eje*/
+	-moz-transform: scale(1.2);
+	/*Aqui para ambos a la vez*/
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+#sesgar2:hover {
+	-webkit-transform: skew(45deg, 0deg);
+	/*Aqui lo hago para cada eje*/
+	-moz-transform: skew(45deg, 0deg);
+	/*Aqui para ambos a la vez*/
+	-o-transform: skew(45deg, 0deg);
+	-ms-transform: skew(45deg, 0deg);
+	transform: skew(45deg, 0deg);
+}
+
+
+
+
+
+
+
+
+
+#rotaciones3 {
+	/*Se pone las transiciones que va a afectar asi como a la duracion en el general
+y en el hover es donde se coloca la animacion*/
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 3s;
+	-webkit-transition-timing-function: cubic-bezier(.57, -1.15, .05, 1.83);
+	-webkit-transition-delay: 3s;
+}
+
+#rotaciones3:hover {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+#traslaciones3:hover {
+	-webkit-transform: translate(-200px, 5px);
+	-moz-transform: translate(-200px, 5px);
+	-o-transform: translate(-200px, 5px);
+	-ms-transform: translate(-200px, 5px);
+	transform: translate(-200px, 5px);
+}
+
+#escalar3:hover {
+	-webkit-transform: scale(1.2, 1.2);
+	/*Aqui lo hago para cada eje*/
+	-moz-transform: scale(1.2);
+	/*Aqui para ambos a la vez*/
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+#sesgar3:hover {
+	-webkit-transform: skew(45deg, 0deg);
+	/*Aqui lo hago para cada eje*/
+	-moz-transform: skew(45deg, 0deg);
+	/*Aqui para ambos a la vez*/
+	-o-transform: skew(45deg, 0deg);
+	-ms-transform: skew(45deg, 0deg);
+	transform: skew(45deg, 0deg);
+}
